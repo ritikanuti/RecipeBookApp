@@ -1,11 +1,13 @@
 # Make user menu with options
 import Ahmad_Ikram
 import Lenorris
-recipe_list = []
+import data_manager
 
-file2 = open("recipes.txt", 'r')
-data = file2.readlines()
-file2.close()
+recipe_list = data_manager.load_recipes()
+
+#file2 = open("recipes.txt", 'r')
+#data = file2.readlines()
+#file2.close()
 
 #user chooses option from menu
 
