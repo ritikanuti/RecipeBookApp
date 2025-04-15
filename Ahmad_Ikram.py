@@ -1,5 +1,4 @@
-# An empty list of recipes(Dictionaries)
-recipes = []
+
 
 # Add a New Recipe
 def add_recipe(recipe_list):
@@ -156,31 +155,4 @@ def list_all_recipes(recipe_list):
         print("Vegetarian: No")
 
 
-
-
-# Pleasse delete all after this
-Boiled_Egg ={
-    "id": 1,
-    "name": "Boiled Egg",
-    "ingredients": "Egg Water",
-    "instructions": "Boil the egg",
-    "cuisine": "idk",
-    "meal_type": "breakfast",
-    "prep_time": 10,
-    "is_vegetarian": True
-}
-recipes.append(Boiled_Egg)
-x=int(input("menu"))
-if x==1:
-    add_recipe(recipes)
-    list_all_recipes(recipes)
-elif x==2:
-    edit_recipe(recipes)
-    list_all_recipes(recipes)
-elif x==3:
-    list_all_recipes(recipes)
-    list_all_recipes(recipes)
-elif x==4:
-    delete_recipe(recipes)
-    list_all_recipes(recipes)
 
