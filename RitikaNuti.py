@@ -34,9 +34,8 @@ while True:
 
 #write recipes to file
 file1 = open("recipes.txt", 'w+')
-numLines = len(file1.readlines())
-for i in range(1,numLines):
-  file1.write(recipes[i])
+data = str(recipes)
+file1.write(data)
 file1.close()
 
 
