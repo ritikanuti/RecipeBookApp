@@ -5,9 +5,6 @@ import data_manager
 
 recipe_list = data_manager.load_recipes()
 
-#file2 = open("recipes.txt", 'r')
-#data = file2.readlines()
-#file2.close()
 
 #user chooses option from menu
 
@@ -34,11 +31,8 @@ while True:
   elif(choice == 6):
     break
 
-#write recipes to file
-file1 = open("recipes.txt", 'w+')
-data = str(recipe_list)
-file1.write(data)
-file1.close()
+# Save recipes to file before exiting
+data_manager.save_recipes(recipe_list)
 
 
 
